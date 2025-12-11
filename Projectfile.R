@@ -22,3 +22,6 @@ data_clean <- modern_renewable_energy_consumption %>%
     )
   ) %>%
   ungroup()
+
+cat("\nMissing values per column:\n")
+print(colSums(is.na(data_clean)))
