@@ -57,3 +57,31 @@ colnames(hydro_wide)[colnames(hydro_wide) == "Brazil"] <- "Brazil_Hydro"
 colnames(hydro_wide)[colnames(hydro_wide) == "India"] <- "India_Hydro"
 
 print(hydro_wide %>% head())
+
+cat("\nBasic Summary: Brazil\n")
+print(summary(hydro_wide$Brazil_Hydro))
+
+cat("\nBasic Summary: India\n")
+print(summary(hydro_wide$India_Hydro))
+
+summary_stats <- function(x) {
+  data.frame(
+    Min       = min(x, na.rm = TRUE),
+    Q1        = quantile(x, 0.25, na.rm = TRUE),
+    Median    = median(x, na.rm = TRUE),
+    Mean      = mean(x, na.rm = TRUE),
+    Q3        = quantile(x, 0.75, na.rm = TRUE),
+    Max       = max(x, na.rm = TRUE),
+    SD        = sd(x, na.rm = TRUE),
+    Range     = max(x, na.rm = TRUE) - min(x, na.rm = TRUE)
+  )
+}
+
+Brazil_summary <- summary_stats(hydro_wide$Brazil_Hydro)
+India_summary  <- summary_stats(hydro_wide$India_Hydro)
+
+cat("\nDescriptive Statistics: Brazil\n")
+print(Brazil_summary)
+
+cat("\nDescriptive Statistics: India\n")
+print(India_summary)
