@@ -79,3 +79,9 @@ summary_stats <- function(x) {
 
 Brazil_summary <- summary_stats(hydro_wide$Brazil_Hydro)
 India_summary  <- summary_stats(hydro_wide$India_Hydro)
+
+cat("\nDescriptive Statistics: Brazil\n")
+print(Brazil_summary)
+
+cat("\nDescriptive Statistics: India\n")
+print(India_summary)
