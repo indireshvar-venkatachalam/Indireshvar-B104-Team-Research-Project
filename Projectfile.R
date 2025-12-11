@@ -52,3 +52,6 @@ hydro_wide <-
   hydro_data %>%
   spread(key = Country, value = `Hydro Power Generation`) %>%
   arrange(Year)
+
+colnames(hydro_wide)[colnames(hydro_wide) == "Brazil"] <- "Brazil_Hydro" 
+colnames(hydro_wide)[colnames(hydro_wide) == "India"] <- "India_Hydro"
