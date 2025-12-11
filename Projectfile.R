@@ -86,11 +86,15 @@ print(Brazil_summary)
 cat("\nDescriptive Statistics: India\n")
 print(India_summary)
 
-hist(data_clean$`Hydropower (terawatt-hours)`,
+x <- data_clean$`Hydropower (terawatt-hours)`
+x <- x[x <= 500]
+hist(x,
      freq = TRUE,
-     main = "Overall Hydropower Generation",
+     main = "Overall Hydropower Gneration",
      xlab = "Hydropower generation (TWh)",
      ylab = "Frequency",
-     col  = "skyblue",
-     border = "black")
-
+     col = "skyblue",
+     border = "black",
+     ylim = c(0, 500),
+     xlim = c(0, 500),
+     breaks = seq(0, 500, 50),)
