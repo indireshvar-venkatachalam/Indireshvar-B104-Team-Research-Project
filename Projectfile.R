@@ -55,3 +55,5 @@ hydro_wide <-
 
 colnames(hydro_wide)[colnames(hydro_wide) == "Brazil"] <- "Brazil_Hydro" 
 colnames(hydro_wide)[colnames(hydro_wide) == "India"] <- "India_Hydro"
+
+print(hydro_wide %>% head())
