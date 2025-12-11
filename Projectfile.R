@@ -36,3 +36,11 @@ data_clean <- data_clean %>%
 
 cat("\nMissing values per column after data cleaning\n")
 print(colSums(is.na(data_clean)))
+
+hydro_data <- data_clean %>%
+  select(
+    Country = Entity,                     
+    Year,
+    `Hydro Power Generation` = `Hydropower (terawatt-hours)`  
+  ) %>%
+  filter(Country %in% c("Brazil", "India"))
