@@ -85,3 +85,12 @@ print(Brazil_summary)
 
 cat("\nDescriptive Statistics: India\n")
 print(India_summary)
+
+hist(data_clean$`Hydropower (terawatt-hours)`,
+     freq = TRUE,
+     main = "Overall Hydropower Generation",
+     xlab = "Hydropower generation (TWh)",
+     ylab = "Frequency",
+     col  = "skyblue",
+     border = "black")
+
