@@ -44,3 +44,5 @@ hydro_data <- data_clean %>%
     `Hydro Power Generation` = `Hydropower (terawatt-hours)`  
   ) %>%
   filter(Country %in% c("Brazil", "India"))
+
+print(hydro_data %>% head())
