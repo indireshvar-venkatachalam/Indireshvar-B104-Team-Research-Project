@@ -13,3 +13,12 @@ numeric_cols <- modern_renewable_energy_consumption %>%
   names()
 numeric_cols
 
+data_clean <- modern_renewable_energy_consumption %>%
+  group_by(Entity) %>%
+  mutate(
+    across(
+      all_of(numeric_cols),
+      ~ tidyr::replace_na(.x, median(.x, na.rm = TRUE))
+    )
+  ) %>%
+  ungroup()
