@@ -57,3 +57,9 @@ colnames(hydro_wide)[colnames(hydro_wide) == "Brazil"] <- "Brazil_Hydro"
 colnames(hydro_wide)[colnames(hydro_wide) == "India"] <- "India_Hydro"
 
 print(hydro_wide %>% head())
+
+cat("\nBasic Summary: Brazil\n")
+print(summary(hydro_wide$Brazil_Hydro))
+
+cat("\nBasic Summary: India\n")
+print(summary(hydro_wide$India_Hydro))
