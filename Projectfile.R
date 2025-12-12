@@ -117,3 +117,17 @@ hist(y,
      col  = "skyblue")
 curve(dnorm(x, mean = mean(y, na.rm = TRUE), sd = sd(y, na.rm = TRUE)),
       add = TRUE, lwd = 2)
+
+wtest <- wilcox.test(x, y, paired = TRUE)
+wtest
+wtest$statistic   # W value
+wtest$p.value     # p-value
+cat("\n Wilcoxon Signed-Rank Test: W =", wtest$statistic,
+    "p-value =", wtest$p.value, "\n")
+
+boxplot(hydro_wide$Brazil_Hydro,
+        hydro_wide$India_Hydro,
+        names = c("Brazil", "India"),
+        ylab  = "Hydropower generation (TWh)",
+        main  = "Hydropower generation : Brazil vs India",
+        col = c("deepskyblue2", "yellow"))
