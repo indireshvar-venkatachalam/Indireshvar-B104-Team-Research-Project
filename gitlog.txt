@@ -1,0 +1,179 @@
+commit b7ae5d4b15de3e1cc871d5f4fd909633dd2f58cf
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 16:41:47 2025 +0000
+
+    Added the reportfile
+
+commit 76368506d3ab66190dcbda2e2311dbf7fa601945
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 11:17:06 2025 +0000
+
+    Added the previous git log
+
+commit ae5250f9e36ff6a9dfe13ca36adb9fbd2f28bc09
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 11:14:52 2025 +0000
+
+    Added the visualization plots as images
+
+commit 870b596b41db03b33d7f988b3413bee2705a6d7e
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 11:10:12 2025 +0000
+
+    Added the Rscript.log file and Rplots
+
+commit d69b7ec0efb7ea8fc63554fdff2dc7a01086d300
+Merge: fde0738 3ff0b4b
+Author: Indireshvar Venkatchalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 09:49:33 2025 +0000
+
+    Merge pull request #4 from indireshvar-venkatachalam/analysing-statistical-test-and-visualization
+    
+    The non parametric statistical test, wilcoxan rank sum test used to analyse the p value and hypothesis and the box plot is used to visualize and compare hydropower generation between Brazil and India.
+
+commit 3ff0b4b660e0402d176d43efd5a4cc8c79527e27
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 09:45:46 2025 +0000
+
+    Implement boxplot comparing hydropower generation between Brazil and India
+
+commit bd0a7708c3dbc5cdf6da2aa7904dc9e9ff539434
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 09:38:08 2025 +0000
+
+    Perform non-parametric statistical (Wilcoxan rank sum test) for comparison of median
+
+commit fde07380b759c63414ceea58aa53bc7167d4ba45
+Merge: d784d54 afb058e
+Author: Indireshvar Venkatchalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 02:33:25 2025 +0000
+
+    Merge pull request #3 from indireshvar-venkatachalam/hydropower-visualization
+    
+    The overall distribution of hydropower generation of brazil and India is visualized using histogram and normality is analysed .Also checked based on individual country.
+
+commit afb058e034bab742ed9c63095f9cb3a55d164d9e
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Fri Dec 12 02:30:07 2025 +0000
+
+    Also check the normality of each individual country based on hydropower generation
+
+commit 4dcc7a51f77d0025fd03d9ded07c85c5c0972bfa
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 23:35:54 2025 +0000
+
+    Change histogram with filtered data and adjusting bins structure
+
+commit 439808a9d569543008d6f40102913f034c36920a
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 23:31:25 2025 +0000
+
+    Histogram for overall hydropower generation
+
+commit d784d54f1b32480efdd20fd02c883b13268342de
+Merge: b2b9075 d62a615
+Author: Indireshvar Venkatchalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 21:47:48 2025 +0000
+
+    Merge pull request #2 from indireshvar-venkatachalam/summary-stats
+    
+    Added the basic summaries and descriptive statistics for the countries Brazila and India for analysing hydropower generation trends.
+
+commit d62a6154e8d45a40c13e52b753ad53e1a5cba07e
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 21:06:08 2025 +0000
+
+    Displaying the descriptive statistics for countries Brazil and India
+
+commit 20875135acd6d7d18e30d142fb9e335fa22a9e65
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 21:04:56 2025 +0000
+
+    Implement detailed descriptive statistics for countries Brazil and India
+
+commit 14a07663a73b67bc67a6641c6775b367890ec892
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 21:01:35 2025 +0000
+
+    Printing the basic summaries for the countries Brazil and India
+
+commit b2b907519e832a983791f7fa20c2cf6ab5509ba2
+Merge: 79df636 23ae899
+Author: Indireshvar Venkatchalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 20:59:41 2025 +0000
+
+    Merge pull request #1 from indireshvar-venkatachalam/hydro-data-processing
+    
+    Hydro data processing
+
+commit 23ae899f9c811fcc945a560f51b9a480f8e049ec
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 19:04:12 2025 +0000
+
+    Displaying the few rows of reshaped dataset
+
+commit aa66a71c7165764f6039b80f538b0c14aca81356
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 19:03:03 2025 +0000
+
+    Renamed the columns
+
+commit 1d4619ee05453d3c69ded8f0aadfbcde56316faa
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 19:01:51 2025 +0000
+
+    Reshaped the data from long to wide format for analaysing
+
+commit b5bb064df2140410b5f2e1a98a3aa4eecd2fe147
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:51:48 2025 +0000
+
+    displaying few rows
+
+commit 3bd58f6434cbc136d2198c6f03cd437356246fe7
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:50:10 2025 +0000
+
+    Select the data needed and filtering countries
+
+commit 918078e645af414aedbe5f9903923ad6cd27b6e6
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:46:08 2025 +0000
+
+    printing columnwise
+
+commit baf9ae67fa64379f2413311f35473cf61caba81f
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:45:00 2025 +0000
+
+    further data cleaning
+
+commit 37870c70c3d4ef95915699fea4f8b62a9b3133fa
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:43:41 2025 +0000
+
+    printing columnwise
+
+commit 5083e4b0bd708c93c7bd41edb6fe9c33297a4456
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:40:09 2025 +0000
+
+    Data cleaning using median imputation
+
+commit 421798be8b49ef2275ae5509df2999da3a507b15
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:32:42 2025 +0000
+
+    Identify the numeric columns for analaysing
+
+commit 45feec4748c56232f5d364849b00d725f616e29d
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:29:13 2025 +0000
+
+    Identify the missing NA values in the dataset
+
+commit 79df636c132be30e8f8d99fb11e98422d0d1233a
+Author: indireshvar-venkatachalam <iv24aag@herts.ac.uk>
+Date:   Thu Dec 11 18:26:44 2025 +0000
+
+    Checking the dataset file uploaded
