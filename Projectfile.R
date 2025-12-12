@@ -90,7 +90,7 @@ x <- data_clean$`Hydropower (terawatt-hours)`
 x <- x[x <= 500]
 hist(x,
      freq = TRUE,
-     main = "Overall Hydropower Gneration",
+     main = "Overall Hydropower Generation",
      xlab = "Hydropower generation (TWh)",
      ylab = "Frequency",
      col = "skyblue",
@@ -98,3 +98,22 @@ hist(x,
      ylim = c(0, 500),
      xlim = c(0, 500),
      breaks = seq(0, 500, 50),)
+
+x <- hydro_wide$Brazil_Hydro
+y <- hydro_wide$India_Hydro
+
+hist(x,
+     freq = FALSE,
+     main = "Brazil Hydropower generation with Normal Curve",
+     xlab = "Hydropower generation (TWh)",
+     col  = "skyblue")
+curve(dnorm(x, mean = mean(x, na.rm = TRUE), sd = sd(x, na.rm = TRUE)),
+      add = TRUE, lwd = 2)
+
+hist(y,
+     freq = FALSE,
+     main = "India Hydropower generation with Normal Curve",
+     xlab = "Hydropower generation (TWh)",
+     col  = "skyblue")
+curve(dnorm(x, mean = mean(y, na.rm = TRUE), sd = sd(y, na.rm = TRUE)),
+      add = TRUE, lwd = 2)
